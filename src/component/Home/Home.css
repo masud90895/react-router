@@ -1,0 +1,30 @@
+.countries{
+   margin: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+/*phone*/
+@media only screen and (max-width: 688px) {
+    .countries{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+}
+/* Tab */
+    @media only screen and (min-width:689px) and (max-width:992px){
+        .countries{
+             grid-template-columns: repeat(2, 1fr);
+             gap: 20px;
+         }
+
+}
+/* leptop */
+    @media only screen and (min-width:993px) and (max-width:1312px){
+        .countries{
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+}
